@@ -1,0 +1,425 @@
+<html> 
+<head>
+<title>FOOD ORDER FORM</title>
+<link rel="stylesheet" type="text/css" href="orderStyling..css">
+<script type="text/javascript" src="order.js">  
+</script> 
+<h>FIT Food - Order Form</h1>
+<table style="background-color:aquamarine;margin-left: 100px;">  <tr>
+<td>Branch : </td>
+<td> 
+<select> 
+<option>--Select Item--</option>
+<option>Galle</option>
+<option>Colombo</option> 
+</select>
+</td> 
+</tr>
+<tr>
+<td>User name:</td>
+<td>
+<input type="text" >
+</td>
+</tr>
+<tr><td>Mobile: </td>
+<td><input type="text" id="mblenmb" onfocusout="checkmob()"></td></tr> 
+</table>
+<br>
+<form name="tblform" >
+<table width="80%"  id="alignment" >
+<tr>
+<th>Food Item</th>
+<th> </th>
+<th>Quantity</th>
+<th>Price</th> 
+</tr>
+<tr> 
+<td>Item 1:</td> 
+<td>
+<select id="item1">
+<option value="1">--Select Item--</option> 
+<option value="Chicken pizza">Chicken pizza</option> 
+<option value="Vegetable Pizza">Vegetable Pizza</option> 
+<option value="Chicken Kottu">Chicken Kottu</option> 
+<option value="Vegetable Kottu">Vegetable Kottu</option> 
+<option value="Water Bottle ">Water Bottle </option>
+<option value="burger">Burger ----- 250</option>
+                    <option value="pizza">Pizza ----- 169</option>
+                    <option value="pasta">Pasta ----- 189</option>
+                    <option value="salad">Salad ----- 159</option>
+                    <option value="Oysters and Pearls">Oysters and Pearls ----230 </option>
+                    <option value="Sabayon of pearl tapioca with island greek oysters">Sabayon of pearl tapioca with island greek oysters -----190</option>
+                    <option value="White Sturgeon Caviar">White Sturgeon Caviar ----- 199</option>
+                    <option value="Stuffed Mushrooms">Stuffed Mushrooms  ------ 169</option>
+                    <option value="Caprese Skewers ">Caprese Skewers  ------189</option>
+                    <option value="Steamed Dumplings">Steamed Dumplings ------ 149</option>
+                    <option value="Quesadillas">Quesadillas   ------ 150</option>
+                    <option value="Mezze Platter">Mezze Platter  ------ 200</option>
+                    <option value="Ultimate Loaded Nachos">Ultimate Loaded Nachos ------ 100</option>
+                    <option value="Best Crudité Platter">Best Crudité Platter  ------ 99</option>
+                    <option value="Potato Skins">Potato Skins   ------ 159</option>
+                    <option value="Crab cakes">Crab cakes  ------ 239</option>
+                    <option value="French onion dip">French onion dip - $139</option>
+                    <option value="Bruschetta">Bruschetta    ------ 149</option>
+                    <option value="Chilly Chicken">Chilly Chicken -----230</option>
+                    <option value="Chicken Winglets">Chicken Winglets ---240</option>
+                    <option value="Chicken Kabab">Chicken Kabab ----230</option>
+                    <option value="Chicken Spring rolls">Chicken Spring rolls ---240</option>
+                    <option value="Chilli Prawns">Chilli Prawns ----230</option>
+                    <option value="Chicken Manchuria">Chicken Manchuria ----240</option>
+                    <option value="Chicken Soup">Chicken Soup ----200</option>
+                    <option value="Chicken Lolly Pops">Chicken Lolly Pops ---230</option>
+                    <option value="Chicken 65">Chicken 65 ----230</option>
+                    <option value="Mutton Soup">Mutton Soup ----230</option>
+                    <option value="Egg Omlette">Egg Omlette ----159</option>
+                    <option value="Chicken Fish Pakron">Chicken Fish Pakron ----149</option>
+                    <option value="Chicken Fish Pakron">Chicken Fish Pakron ----149</option>
+                    <option value="Chilli Prawns Spicy">Chilli Prawns Spicy</option>
+                    <option value="Crispy Baken Raggon">Crispy Baken Raggon ----230</option>
+                    <option value="Pani Puri water Stuffing">Pani Puri water Stuffing-----130</option>
+                    <option value="Masala Papad">Masala Papad---240</option>
+                    <option value="Allo Chatia">Allo Chatia ----230</option>
+                    <option value="Manchuria">Manchuria ---240</option>
+                    <option value="Gobi Manchuria">Gobi Manchuria----230</option>
+                    <option value="Baby Corn Manchuria">Baby Corn Manchuria----240</option>
+                    <option value="Dill Leaves Pakoda">Dill Leaves Pakoda----200</option>
+                    <option value="Roti With Paneer Curry">Roti with Paneer curry---230</option>
+                    <option value="Veg Kabab">Veg Kabab----230</option>
+                    <option value="Mushroom Tikka">Mushroom Tikka----230</option>
+                    <option value="Cheese Balls">Cheese Balls----159</option>
+                    <option value="Corn caht">Corn Chat----149</option>
+                    <option value="Roti With CAshew paneer Curry">Roti With Cashew Paneer Curry----149</option>
+                    <option value="Hyderabad Dum Biriyani">Hyderabadi Dum Biriyani ----250</option>
+                    <option value="Chilli Chicken Biriyani">Chilli Chicken Biriyani -----250</option>
+                    <option value="Fried Piece Biriyani">Fried Piece Biriyani -----230</option> 
+                    <option value="Chicken Lolly Biriyani">Chicken Lolly Pop Biriyani  ---240</option>
+                    <option value="Chitti Mutyallu Biriyani">Chitti Mutyallu Biriniyani Mixed----230</option>
+                    <option value="Mixed Biriyani">Mixed Biriyani---240</option>
+                    <option value="Mutton Chicken Curry">Mutton Chicken Curry ----230</option>
+                    <option value="Mutton Curry">Mutton Curry ----230</option>
+                    <option value="Prawn Curry">Prawn Curry----200</option>
+                    <option value="Chicken Curry">Chicken Curry---230</option>
+                    <option value="Crab Curry">Crab Curry ---230</option>
+                    <option value="Fish Biriyani"> Fish Biriyani----230</option>
+                    <option value="Wings Biriyani">Wings Biriyani----230</option>
+                    <option value="Coke">Coke ----45</option>
+                    <option value="Sprite">Sprite ----45</option>
+                    <option value="Thums-Up">Thums-Up ----45</option>
+                    <option value="Artos">Artos ---45</option>
+                    <option value="Strawberry Ice Cream">Strawberry Ice Cream-----130</option>
+                    <option value="Vanilla Ice Cream">vannilla Ice Cream ---140</option>
+                    <option value="ButterScotch Ice Cream">Butter Scotch Ice Cream----130</option>
+                    <option value="Chocolate ICe Cream"> Chocalate Ice Cream----140</option>
+                    <option value="Gulab Jamun Cake">Gulab Jamun Ice Cream----230</option>
+                    <option value="Chocolate Cake">Chocolate MilkShake ---140</option>
+                    <option value="Vanilla Cake">Vanila MilkShake ---140</option>
+                    <option value="Butterscotch Mikshake">ButterScotch MilkShake ---140</option>
+                    <option value="Strawberry Cake">Strawbwrry MilkShake</option>
+                    <option value="Chocolate Cake">Chocolate Cake ---70</option>
+                    <option value="Strawberry Cake">Strawberry Cake ---70</option>
+                    <option value="Vanilla Cake">Vanilla Cake ---70</option>
+                    <option value="Blue Mojito">Blue Mojito-----130</option>
+                    <option value="Red Wine Mocktail">Red Wine Moctail ---140</option>
+                    <option value="Cran Berry Moctail">Cran Berry Moctail----130</option>
+                    <option value="Strawberry Mocktail">Strawberry Mocktail ---150</option>
+</select>
+</td> 
+<td><input type="number" value="0" id="q1"></td>
+<td><input type="text" id="p1"></td>
+</tr>   
+<tr>
+<td>Item 2:</td>
+<td>
+<select id="item2"> 
+<option value="1">--Select Item--</option> 
+<option value="Chicken pizza">Chicken pizza</option> 
+<option value="Vegetable Pizza">Vegetable Pizza</option> 
+<option value="Chicken Kottu">Chicken Kottu</option>  
+<option value="Vegetable Kottu">Vegetable Kottu</option>
+<option value="Water Bottle ">Water Bottle </option>
+<option value="burger">Burger ----- 250</option>
+                    <option value="pizza">Pizza ----- 169</option>
+                    <option value="pasta">Pasta ----- 189</option>
+                    <option value="salad">Salad ----- 159</option>
+                    <option value="Oysters and Pearls">Oysters and Pearls ----230 </option>
+                    <option value="Sabayon of pearl tapioca with island greek oysters">Sabayon of pearl tapioca with island greek oysters -----190</option>
+                    <option value="White Sturgeon Caviar">White Sturgeon Caviar ----- 199</option>
+                    <option value="Stuffed Mushrooms">Stuffed Mushrooms  ------ 169</option>
+                    <option value="Caprese Skewers ">Caprese Skewers  ------189</option>
+                    <option value="Steamed Dumplings">Steamed Dumplings ------ 149</option>
+                    <option value="Quesadillas">Quesadillas   ------ 150</option>
+                    <option value="Mezze Platter">Mezze Platter  ------ 200</option>
+                    <option value="Ultimate Loaded Nachos">Ultimate Loaded Nachos ------ 100</option>
+                    <option value="Best Crudité Platter">Best Crudité Platter  ------ 99</option>
+                    <option value="Potato Skins">Potato Skins   ------ 159</option>
+                    <option value="Crab cakes">Crab cakes  ------ 239</option>
+                    <option value="French onion dip">French onion dip - $139</option>
+                    <option value="Bruschetta">Bruschetta    ------ 149</option>
+                    <option value="Chilly Chicken">Chilly Chicken -----230</option>
+                    <option value="Chicken Winglets">Chicken Winglets ---240</option>
+                    <option value="Chicken Kabab">Chicken Kabab ----230</option>
+                    <option value="Chicken Spring rolls">Chicken Spring rolls ---240</option>
+                    <option value="Chilli Prawns">Chilli Prawns ----230</option>
+                    <option value="Chicken Manchuria">Chicken Manchuria ----240</option>
+                    <option value="Chicken Soup">Chicken Soup ----200</option>
+                    <option value="Chicken Lolly Pops">Chicken Lolly Pops ---230</option>
+                    <option value="Chicken 65">Chicken 65 ----230</option>
+                    <option value="Mutton Soup">Mutton Soup ----230</option>
+                    <option value="Egg Omlette">Egg Omlette ----159</option>
+                    <option value="Chicken Fish Pakron">Chicken Fish Pakron ----149</option>
+                    <option value="Chicken Fish Pakron">Chicken Fish Pakron ----149</option>
+                    <option value="Chilli Prawns Spicy">Chilli Prawns Spicy</option>
+                    <option value="Crispy Baken Raggon">Crispy Baken Raggon ----230</option>
+                    <option value="Pani Puri water Stuffing">Pani Puri water Stuffing-----130</option>
+                    <option value="Masala Papad">Masala Papad---240</option>
+                    <option value="Allo Chatia">Allo Chatia ----230</option>
+                    <option value="Manchuria">Manchuria ---240</option>
+                    <option value="Gobi Manchuria">Gobi Manchuria----230</option>
+                    <option value="Baby Corn Manchuria">Baby Corn Manchuria----240</option>
+                    <option value="Dill Leaves Pakoda">Dill Leaves Pakoda----200</option>
+                    <option value="Roti With Paneer Curry">Roti with Paneer curry---230</option>
+                    <option value="Veg Kabab">Veg Kabab----230</option>
+                    <option value="Mushroom Tikka">Mushroom Tikka----230</option>
+                    <option value="Cheese Balls">Cheese Balls----159</option>
+                    <option value="Corn caht">Corn Chat----149</option>
+                    <option value="Roti With CAshew paneer Curry">Roti With Cashew Paneer Curry----149</option>
+                    <option value="Hyderabad Dum Biriyani">Hyderabadi Dum Biriyani ----250</option>
+                    <option value="Chilli Chicken Biriyani">Chilli Chicken Biriyani -----250</option>
+                    <option value="Fried Piece Biriyani">Fried Piece Biriyani -----230</option> 
+                    <option value="Chicken Lolly Biriyani">Chicken Lolly Pop Biriyani  ---240</option>
+                    <option value="Chitti Mutyallu Biriyani">Chitti Mutyallu Biriniyani Mixed----230</option>
+                    <option value="Mixed Biriyani">Mixed Biriyani---240</option>
+                    <option value="Mutton Chicken Curry">Mutton Chicken Curry ----230</option>
+                    <option value="Mutton Curry">Mutton Curry ----230</option>
+                    <option value="Prawn Curry">Prawn Curry----200</option>
+                    <option value="Chicken Curry">Chicken Curry---230</option>
+                    <option value="Crab Curry">Crab Curry ---230</option>
+                    <option value="Fish Biriyani"> Fish Biriyani----230</option>
+                    <option value="Wings Biriyani">Wings Biriyani----230</option>
+                    <option value="Coke">Coke ----45</option>
+                    <option value="Sprite">Sprite ----45</option>
+                    <option value="Thums-Up">Thums-Up ----45</option>
+                    <option value="Artos">Artos ---45</option>
+                    <option value="Strawberry Ice Cream">Strawberry Ice Cream-----130</option>
+                    <option value="Vanilla Ice Cream">vannilla Ice Cream ---140</option>
+                    <option value="ButterScotch Ice Cream">Butter Scotch Ice Cream----130</option>
+                    <option value="Chocolate ICe Cream"> Chocalate Ice Cream----140</option>
+                    <option value="Gulab Jamun Cake">Gulab Jamun Ice Cream----230</option>
+                    <option value="Chocolate Cake">Chocolate MilkShake ---140</option>
+                    <option value="Vanilla Cake">Vanila MilkShake ---140</option>
+                    <option value="Butterscotch Mikshake">ButterScotch MilkShake ---140</option>
+                    <option value="Strawberry Cake">Strawbwrry MilkShake</option>
+                    <option value="Chocolate Cake">Chocolate Cake ---70</option>
+                    <option value="Strawberry Cake">Strawberry Cake ---70</option>
+                    <option value="Vanilla Cake">Vanilla Cake ---70</option>
+                    <option value="Blue Mojito">Blue Mojito-----130</option>
+                    <option value="Red Wine Mocktail">Red Wine Moctail ---140</option>
+                    <option value="Cran Berry Moctail">Cran Berry Moctail----130</option>
+                    <option value="Strawberry Mocktail">Strawberry Mocktail ---150</option>  
+</select>
+</td>
+<td><input  type="number" value="0" id="q2"></td>  
+<td><input type="text"  id="p2"></td>  
+</tr> 
+<tr>
+<td>Item 3:</td>
+<td><select id="item3">  
+<option value="1">--Select Item--</option> 
+<option value="Chicken pizza">Chicken pizza</option>  
+<option value="Vegetable Pizza">Vegetable Pizza</option> 
+<option value="Chicken Kottu">Chicken Kottu</option>
+<option value="Vegetable Kottu">Vegetable Kottu</option> 
+<option value="Water Bottle ">Water Bottle </option> 
+<option value="burger">Burger ----- 250</option>
+                    <option value="pizza">Pizza ----- 169</option>
+                    <option value="pasta">Pasta ----- 189</option>
+                    <option value="salad">Salad ----- 159</option>
+                    <option value="Oysters and Pearls">Oysters and Pearls ----230 </option>
+                    <option value="Sabayon of pearl tapioca with island greek oysters">Sabayon of pearl tapioca with island greek oysters -----190</option>
+                    <option value="White Sturgeon Caviar">White Sturgeon Caviar ----- 199</option>
+                    <option value="Stuffed Mushrooms">Stuffed Mushrooms  ------ 169</option>
+                    <option value="Caprese Skewers ">Caprese Skewers  ------189</option>
+                    <option value="Steamed Dumplings">Steamed Dumplings ------ 149</option>
+                    <option value="Quesadillas">Quesadillas   ------ 150</option>
+                    <option value="Mezze Platter">Mezze Platter  ------ 200</option>
+                    <option value="Ultimate Loaded Nachos">Ultimate Loaded Nachos ------ 100</option>
+                    <option value="Best Crudité Platter">Best Crudité Platter  ------ 99</option>
+                    <option value="Potato Skins">Potato Skins   ------ 159</option>
+                    <option value="Crab cakes">Crab cakes  ------ 239</option>
+                    <option value="French onion dip">French onion dip - $139</option>
+                    <option value="Bruschetta">Bruschetta    ------ 149</option>
+                    <option value="Chilly Chicken">Chilly Chicken -----230</option>
+                    <option value="Chicken Winglets">Chicken Winglets ---240</option>
+                    <option value="Chicken Kabab">Chicken Kabab ----230</option>
+                    <option value="Chicken Spring rolls">Chicken Spring rolls ---240</option>
+                    <option value="Chilli Prawns">Chilli Prawns ----230</option>
+                    <option value="Chicken Manchuria">Chicken Manchuria ----240</option>
+                    <option value="Chicken Soup">Chicken Soup ----200</option>
+                    <option value="Chicken Lolly Pops">Chicken Lolly Pops ---230</option>
+                    <option value="Chicken 65">Chicken 65 ----230</option>
+                    <option value="Mutton Soup">Mutton Soup ----230</option>
+                    <option value="Egg Omlette">Egg Omlette ----159</option>
+                    <option value="Chicken Fish Pakron">Chicken Fish Pakron ----149</option>
+                    <option value="Chicken Fish Pakron">Chicken Fish Pakron ----149</option>
+                    <option value="Chilli Prawns Spicy">Chilli Prawns Spicy</option>
+                    <option value="Crispy Baken Raggon">Crispy Baken Raggon ----230</option>
+                    <option value="Pani Puri water Stuffing">Pani Puri water Stuffing-----130</option>
+                    <option value="Masala Papad">Masala Papad---240</option>
+                    <option value="Allo Chatia">Allo Chatia ----230</option>
+                    <option value="Manchuria">Manchuria ---240</option>
+                    <option value="Gobi Manchuria">Gobi Manchuria----230</option>
+                    <option value="Baby Corn Manchuria">Baby Corn Manchuria----240</option>
+                    <option value="Dill Leaves Pakoda">Dill Leaves Pakoda----200</option>
+                    <option value="Roti With Paneer Curry">Roti with Paneer curry---230</option>
+                    <option value="Veg Kabab">Veg Kabab----230</option>
+                    <option value="Mushroom Tikka">Mushroom Tikka----230</option>
+                    <option value="Cheese Balls">Cheese Balls----159</option>
+                    <option value="Corn caht">Corn Chat----149</option>
+                    <option value="Roti With CAshew paneer Curry">Roti With Cashew Paneer Curry----149</option>
+                    <option value="Hyderabad Dum Biriyani">Hyderabadi Dum Biriyani ----250</option>
+                    <option value="Chilli Chicken Biriyani">Chilli Chicken Biriyani -----250</option>
+                    <option value="Fried Piece Biriyani">Fried Piece Biriyani -----230</option> 
+                    <option value="Chicken Lolly Biriyani">Chicken Lolly Pop Biriyani  ---240</option>
+                    <option value="Chitti Mutyallu Biriyani">Chitti Mutyallu Biriniyani Mixed----230</option>
+                    <option value="Mixed Biriyani">Mixed Biriyani---240</option>
+                    <option value="Mutton Chicken Curry">Mutton Chicken Curry ----230</option>
+                    <option value="Mutton Curry">Mutton Curry ----230</option>
+                    <option value="Prawn Curry">Prawn Curry----200</option>
+                    <option value="Chicken Curry">Chicken Curry---230</option>
+                    <option value="Crab Curry">Crab Curry ---230</option>
+                    <option value="Fish Biriyani"> Fish Biriyani----230</option>
+                    <option value="Wings Biriyani">Wings Biriyani----230</option>
+                    <option value="Coke">Coke ----45</option>
+                    <option value="Sprite">Sprite ----45</option>
+                    <option value="Thums-Up">Thums-Up ----45</option>
+                    <option value="Artos">Artos ---45</option>
+                    <option value="Strawberry Ice Cream">Strawberry Ice Cream-----130</option>
+                    <option value="Vanilla Ice Cream">vannilla Ice Cream ---140</option>
+                    <option value="ButterScotch Ice Cream">Butter Scotch Ice Cream----130</option>
+                    <option value="Chocolate ICe Cream"> Chocalate Ice Cream----140</option>
+                    <option value="Gulab Jamun Cake">Gulab Jamun Ice Cream----230</option>
+                    <option value="Chocolate Cake">Chocolate MilkShake ---140</option>
+                    <option value="Vanilla Cake">Vanila MilkShake ---140</option>
+                    <option value="Butterscotch Mikshake">ButterScotch MilkShake ---140</option>
+                    <option value="Strawberry Cake">Strawbwrry MilkShake</option>
+                    <option value="Chocolate Cake">Chocolate Cake ---70</option>
+                    <option value="Strawberry Cake">Strawberry Cake ---70</option>
+                    <option value="Vanilla Cake">Vanilla Cake ---70</option>
+                    <option value="Blue Mojito">Blue Mojito-----130</option>
+                    <option value="Red Wine Mocktail">Red Wine Moctail ---140</option>
+                    <option value="Cran Berry Moctail">Cran Berry Moctail----130</option>
+                    <option value="Strawberry Mocktail">Strawberry Mocktail ---150</option>
+</select>
+</td>
+<td><input type="number" value="0" id="q3"></td>
+<td><input type="text"  id="p3"></td> 
+</tr> 
+<tr>
+<td>Item 4:</td>
+<td><select id="item4">   
+                    <option value="1">--Select Item--</option> 
+                    <option value="Chicken pizza">Chicken pizza</option>   
+                    <option value="Vegetable Pizza">Vegetable Pizza</option> 
+                    <option value="Chicken Kottu">Chicken Kottu</option> 
+                    <option value="Vegetable Kottu">Vegetable Kottu</option> 
+                    <option value="Water Bottle ">Water Bottle </option>
+                    <option value="" disabled selected>Select an item</option>
+                    <option value="burger">Burger ----- 250</option>
+                    <option value="pizza">Pizza ----- 169</option>
+                    <option value="pasta">Pasta ----- 189</option>
+                    <option value="salad">Salad ----- 159</option>
+                    <option value="Oysters and Pearls">Oysters and Pearls ----230 </option>
+                    <option value="Sabayon of pearl tapioca with island greek oysters">Sabayon of pearl tapioca with island greek oysters -----190</option>
+                    <option value="White Sturgeon Caviar">White Sturgeon Caviar ----- 199</option>
+                    <option value="Stuffed Mushrooms">Stuffed Mushrooms  ------ 169</option>
+                    <option value="Caprese Skewers ">Caprese Skewers  ------189</option>
+                    <option value="Steamed Dumplings">Steamed Dumplings ------ 149</option>
+                    <option value="Quesadillas">Quesadillas   ------ 150</option>
+                    <option value="Mezze Platter">Mezze Platter  ------ 200</option>
+                    <option value="Ultimate Loaded Nachos">Ultimate Loaded Nachos ------ 100</option>
+                    <option value="Best Crudité Platter">Best Crudité Platter  ------ 99</option>
+                    <option value="Potato Skins">Potato Skins   ------ 159</option>
+                    <option value="Crab cakes">Crab cakes  ------ 239</option>
+                    <option value="French onion dip">French onion dip - $139</option>
+                    <option value="Bruschetta">Bruschetta    ------ 149</option>
+                    <option value="Chilly Chicken">Chilly Chicken -----230</option>
+                    <option value="Chicken Winglets">Chicken Winglets ---240</option>
+                    <option value="Chicken Kabab">Chicken Kabab ----230</option>
+                    <option value="Chicken Spring rolls">Chicken Spring rolls ---240</option>
+                    <option value="Chilli Prawns">Chilli Prawns ----230</option>
+                    <option value="Chicken Manchuria">Chicken Manchuria ----240</option>
+                    <option value="Chicken Soup">Chicken Soup ----200</option>
+                    <option value="Chicken Lolly Pops">Chicken Lolly Pops ---230</option>
+                    <option value="Chicken 65">Chicken 65 ----230</option>
+                    <option value="Mutton Soup">Mutton Soup ----230</option>
+                    <option value="Egg Omlette">Egg Omlette ----159</option>
+                    <option value="Chicken Fish Pakron">Chicken Fish Pakron ----149</option>
+                    <option value="Chicken Fish Pakron">Chicken Fish Pakron ----149</option>
+                    <option value="Chilli Prawns Spicy">Chilli Prawns Spicy</option>
+                    <option value="Crispy Baken Raggon">Crispy Baken Raggon ----230</option>
+                    <option value="Pani Puri water Stuffing">Pani Puri water Stuffing-----130</option>
+                    <option value="Masala Papad">Masala Papad---240</option>
+                    <option value="Allo Chatia">Allo Chatia ----230</option>
+                    <option value="Manchuria">Manchuria ---240</option>
+                    <option value="Gobi Manchuria">Gobi Manchuria----230</option>
+                    <option value="Baby Corn Manchuria">Baby Corn Manchuria----240</option>
+                    <option value="Dill Leaves Pakoda">Dill Leaves Pakoda----200</option>
+                    <option value="Roti With Paneer Curry">Roti with Paneer curry---230</option>
+                    <option value="Veg Kabab">Veg Kabab----230</option>
+                    <option value="Mushroom Tikka">Mushroom Tikka----230</option>
+                    <option value="Cheese Balls">Cheese Balls----159</option>
+                    <option value="Corn caht">Corn Chat----149</option>
+                    <option value="Roti With CAshew paneer Curry">Roti With Cashew Paneer Curry----149</option>
+                    <option value="Hyderabad Dum Biriyani">Hyderabadi Dum Biriyani ----250</option>
+                    <option value="Chilli Chicken Biriyani">Chilli Chicken Biriyani -----250</option>
+                    <option value="Fried Piece Biriyani">Fried Piece Biriyani -----230</option> 
+                    <option value="Chicken Lolly Biriyani">Chicken Lolly Pop Biriyani  ---240</option>
+                    <option value="Chitti Mutyallu Biriyani">Chitti Mutyallu Biriniyani Mixed----230</option>
+                    <option value="Mixed Biriyani">Mixed Biriyani---240</option>
+                    <option value="Mutton Chicken Curry">Mutton Chicken Curry ----230</option>
+                    <option value="Mutton Curry">Mutton Curry ----230</option>
+                    <option value="Prawn Curry">Prawn Curry----200</option>
+                    <option value="Chicken Curry">Chicken Curry---230</option>
+                    <option value="Crab Curry">Crab Curry ---230</option>
+                    <option value="Fish Biriyani"> Fish Biriyani----230</option>
+                    <option value="Wings Biriyani">Wings Biriyani----230</option>
+                    <option value="Coke">Coke ----45</option>
+                    <option value="Sprite">Sprite ----45</option>
+                    <option value="Thums-Up">Thums-Up ----45</option>
+                    <option value="Artos">Artos ---45</option>
+                    <option value="Strawberry Ice Cream">Strawberry Ice Cream-----130</option>
+                    <option value="Vanilla Ice Cream">vannilla Ice Cream ---140</option>
+                    <option value="ButterScotch Ice Cream">Butter Scotch Ice Cream----130</option>
+                    <option value="Chocolate ICe Cream"> Chocalate Ice Cream----140</option>
+                    <option value="Gulab Jamun Cake">Gulab Jamun Ice Cream----230</option>
+                    <option value="Chocolate Cake">Chocolate MilkShake ---140</option>
+                    <option value="Vanilla Cake">Vanila MilkShake ---140</option>
+                    <option value="Butterscotch Mikshake">ButterScotch MilkShake ---140</option>
+                    <option value="Strawberry Cake">Strawbwrry MilkShake</option>
+                    <option value="Chocolate Cake">Chocolate Cake ---70</option>
+                    <option value="Strawberry Cake">Strawberry Cake ---70</option>
+                    <option value="Vanilla Cake">Vanilla Cake ---70</option>
+                    <option value="Blue Mojito">Blue Mojito-----130</option>
+                    <option value="Red Wine Mocktail">Red Wine Moctail ---140</option>
+                    <option value="Cran Berry Moctail">Cran Berry Moctail----130</option>
+                    <option value="Strawberry Mocktail">Strawberry Mocktail ---150</option>
+</tr>
+
+<tr>
+</select>
+</td>
+
+<td><input type="number" value="0" id="q4"></td>
+<td><input type="text"  id="p4"></td> 
+</tr>    
+<tr>
+<td></td> 
+<td></td> 
+<td><input type="submit" class="button" value="Create Bill" onclick=createBill()></td>
+<td><input type="reset" class="button" value="Clear"></td>
+<p Only Cash Delivery is Available></p>
+</tr>
+</table>
+</form>
+</head>
+</html>
